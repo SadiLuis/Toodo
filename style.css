@@ -1,0 +1,67 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #333;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#taskForm{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskForm input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+#taskForm button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#taskList{
+    list-style: none;
+    padding: 0;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #cccc;
+}
+
+.task:last-child{
+    border-bottom: none;
+}
+
+.task .task-text{
+    flex: 1;
+}
+
+.delete-button{
+    background-color: #f44336;
+    color: #ffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
